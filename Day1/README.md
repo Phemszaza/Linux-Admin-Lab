@@ -13,7 +13,7 @@ Users: Created a non-root user with sudo privileges
 Networking:
 enp0s3 → NAT (internet access via DHCP)
 
-enp0s8 → Host-only (static IP 192.168.56.100 for SSH, Cockpit, XRDP)
+enp0s8 → Host-only (static IP 192.168.56.1** for SSH, Cockpit, XRDP)
 
 📂 Linux Basics Practiced
 File & directory management:
@@ -70,7 +70,7 @@ sudo systemctl enable --now cockpit.socket
 
 Accessed from Windows browser:
 
-https://192.168.56.100:9090
+https://192.168.56.1**:9090
 
 
 Logged in with Ubuntu server user credentials.
@@ -89,13 +89,14 @@ sudo systemctl enable --now xrdp
 
 Connected from Windows using Remote Desktop Connection (mstsc.exe):
 
-Server: 192.168.56.100
+Server: 192.168.56.1**
 
 Protocol: RDP
 
 Logged in with Ubuntu user credentials.
 
-🖼️ LXDE Desktop Environment
+
+#🖼️ LXDE Desktop Environment
 
 Installed lightweight LXDE GUI:
 
@@ -111,6 +112,8 @@ Light on resources (perfect for VMs).
 Simple, familiar interface for users/admins.
 
 Works smoothly with XRDP out of the box.
+
+
 
 📝 Key Learnings from Day 1
 
@@ -129,6 +132,7 @@ Web → Cockpit on port 9090
 GUI → XRDP with LXDE
 
 Importance of planning network interfaces (NAT vs Host-Only).
+
 
 📸 Screenshots (in day1/screenshots/)
 
